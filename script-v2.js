@@ -1,23 +1,14 @@
-const section01 = document.querySelector('#section-01');
-const faceWrap = document.querySelector('.face-wrap');
-const faces = document.querySelectorAll('.face');
-
-section01.addEventListener('scroll', () => {
-  const firstFace = faces[0];
-  const firstFaceRect = firstFace.getBoundingClientRect();
-  const lastFace = faces[faces.length - 1];
-
-  console.log(firstFaceRect.right)
-  const viewportWidth = window.innerWidth;
-//   console.log(viewportWidth)
-//   if (firstFaceRect.x < viewportWidth) {
-//     // 이동할 얼굴 요소를 가져옵니다.
-//     const movedFace = firstFace;
-    
-//     // 가장 처음에 있는 얼굴 요소를 삭제합니다.
-//     firstFace.remove();
-
-//     // 이동할 얼굴 요소를 .face-wrap에 추가합니다.
-//     faceWrap.appendChild(movedFace);
-//   }
+document.addEventListener("DOMContentLoaded", function () {
+  let swiper = new Swiper(".swiper-container", {
+    loop: true,
+    mousewheel: {
+      releaseOnEdges: true,
+    },
+    // allowTouchMove: false,
+    preventClicks: false,
+    slidesPerView: "auto",
+    // centeredSlides: true,
+    // freeMode: true, // 이미지가 스크롤 중에 멈출 위치를 자유롭게 설정합니다.
+    speed: 100,
+  });
 });

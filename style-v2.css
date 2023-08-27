@@ -151,11 +151,6 @@ section::-webkit-scrollbar{
   width: 100vh;
   height: 100vh;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-sizing: border-box;
-
   background-image: url(./asset/bg-low.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -172,4 +167,11 @@ section::-webkit-scrollbar{
 }
 .face-04 {
   background-position: -300vh;
+}
+
+
+.face a {
+  position: absolute;
+  top: 20px;
+  left: 40px
 }
