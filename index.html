@@ -4,15 +4,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome Cororo</title>
+    <script>
+      (function(d) {
+        var config = {
+          kitId: 'pgr1nvv',
+          scriptTimeout: 3000,
+          async: true
+        },
+        h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+      })(document);
+    </script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <section>
+    <section id="UI">
+      <div class="btn btn-top">top</div>
+      <div class="btn btn-left">left</div>
+      <div class="btn btn-right">right</div>
+      <div class="btn-wrap">
+        <div class="card">
+          <p>코로로는 각자 좋아하는 음악을 서로에게 소개했습니다.
+            소개한 음악의 구간을 나누고, 구간에 해당하는 규칙을 만들어 이미지를 제작해 이를 모아 웹 콜라주를 진행했습니다.</p>
+
+          <p>음악과 이미지가 담긴 각자의 콜라주 웹사이트는 직접 선정한 물건으로 연결되어 “Welcome Cororo”라는 골동품 가게에 섞여있습니다.
+            여러 골동품 중 웹사이트가 연결된 6개의 물건을 찾아 콜라주와 음악을 감상해보세요!</p>
+        </div>
+      </div>
+    </section>
+    <section id="main">
         <div class="cube">
-            <div class="face front">Front</div>
-            <div class="face back">Back</div>
-            <div class="face right">Right</div>
-            <div class="face left">Left</div>
+            <div class="face front">
+              <a class="obj player-02" href="#">
+                <img width="74px" src="./asset/obj/jw_record.png" alt="">
+              </a>
+              <a class="obj player-03" href="#">
+                <img width="65px" src="./asset/obj/sh_drumpad_off.png" alt="">
+              </a>
+            </div>
+            <div class="face right">
+              <a class="obj player-01" href="#">
+                <img width="67px" src="./asset/obj/cs-television.png" alt="">
+              </a>
+              <a class="obj player-04" href="#">
+                <img width="78px" src="./asset/obj/hj-dvdplayer_closed.png" alt="">
+              </a>
+            </div>
+            <div class="face back">
+              <a class="obj player-05" href="#">
+                <img width="72px" src="./asset/obj/sy-headset.png" alt="">
+              </a>
+            </div>
+            <div class="face left"></div>
+            <div class="disk">
+              <a href="#" class="disk-wrap">
+                <div class="disk-face disk-front"></div>
+                <div class="disk-face disk-back"></div>
+              </a>
+            </div>
           </div>
     </section>
     <script src="script.js"></script> <!-- 스크립트 파일 링크 -->
