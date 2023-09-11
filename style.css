@@ -106,7 +106,7 @@ section#UI .btn {
   background-color: rgba(243, 243, 243, 0.4);
   backdrop-filter: blur(4.5px);
   transition: all .5s ease;
-  transform: rotateX(35deg) translateZ(-250px) translateX(200px) translateY(420px);
+  transform: rotateX(35deg) translateZ(-250px) translateX(200px) translateY(38vh);
 }
 .card:hover {
   opacity: 1;
@@ -114,7 +114,7 @@ section#UI .btn {
   box-shadow:
     0 0 5px 3px #ffffff,
     0 0 15px 10px #fff1968c;
-  transform: rotateX(35deg) translateZ(-250px) translateX(200px) translateY(280px);
+  transform: rotateX(35deg) translateZ(-250px) translateX(200px) translateY(22vh);
 }
 .card p {
   font-size: 14px;
@@ -166,7 +166,7 @@ section#main {
     position: absolute;
     width: 500px;
     height: 500px;
-    background-image: url(./asset/WEB-v2.jpg);
+    background-image: url(./asset/player-off-bg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     backface-visibility: hidden;
@@ -265,4 +265,8 @@ section#main {
 .player-05 {
   top: 260px;
   left: 172px;
+}
+.player-06 {
+  top: 234px;
+  left: 66px;
 }
