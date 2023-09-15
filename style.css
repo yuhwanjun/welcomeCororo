@@ -64,7 +64,7 @@ section#UI{
 }
 section#UI .btn {
   display: block;
-  color: black;
+  color: white;
   font-size: 20px;
   width: 60px;
   text-align: center;
@@ -86,7 +86,7 @@ section#UI .btn {
   height: 80px;
   width: 250px;
   border-radius: 268px;
-  transform: rotateX(35deg) translateZ(-60px) translateX(-80px) translateY(-5vh);
+  transform: rotateX(35deg) translateZ(-100px) translateX(-80px) translateY(0vh);
 }
 .btn-bg {
   position: absolute;
@@ -120,7 +120,7 @@ section#UI .btn {
   background-color: rgba(243, 243, 243, 0.4);
   backdrop-filter: blur(4.5px);
   transition: all .5s ease;
-  transform: rotateX(35deg) translateZ(-250px) translateX(200px) translateY(38vh);
+  transform: rotateX(35deg) translateZ(-250px) translateX(200px) translateY(36vh);
 }
 .card:hover {
   opacity: 1;
